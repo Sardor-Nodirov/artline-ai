@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.chat-window {
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 14%);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.chat-header {  /* New header style */
+    background: linear-gradient(to right, #b22626, #7b0d0dc3);
+    color: white;
+    padding: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 20px 20px 0px 0px;
+    font-family: 'Gabarito', cursive;
+}
+
+.chat-history {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user, .assistant {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+
+.user-icon, .assistant-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.user-icon {
+    background-image: url('./pfp.png');
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.assistant-icon {
+    background-image: url("https://branditechture.agency/brand-logos/wp-content/uploads/2022/06/5842f68fa6515b1e0ad75b22.png");
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.user {
+    background-color: #820d0d;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+    max-width: 60.6%;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.assistant {
+    background-color: #e6e6e6;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+    max-width: 60.6%;
+    width: fit-content;
+    margin-right: auto;
+    flex-direction: row-reverse;
+}
+
+.time-text-user { /* New time text style */
+    font-size: 0.7em;
+    margin-top: 3px;
+    opacity: 0.7;
+    margin-left: 88%;
+    font-size: 10px;
+    color: grey;
+}
+
+.time-text-ai { /* New time text style */
+    font-size: 0.7em;
+    margin-top: 3px;
+    opacity: 0.7;
+    font-size: 10px;
+    color: grey;
+}
+
+.user-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.ai-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px 8px;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.chat-input button {
+    background-color: #861715;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px;
+}
